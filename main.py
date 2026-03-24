@@ -373,7 +373,7 @@ class KdocsAutoCrawler:
                 time.sleep(30)
                 self.wait.until(EC.element_to_be_clickable((By.XPATH,'//*[@id="wo-common-header"]/div[1]/span[2]'))).click()
                 time.sleep(3)
-                self.wait.until(EC.element_to_be_clickable((By.XPATH,'//*[@id="util-popup"]//div[text()="下载"]'))).click()
+                self.wait.until(EC.element_to_be_clickable((By.XPATH,'//*[@id="util-popup"]/div/div/div/div[1]/div[2]'))).click()
                 time.sleep(30)
                 logger.info(f"✅ 标签页 {i+1} 下载完成")
             except Exception as e:
