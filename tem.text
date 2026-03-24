@@ -1,0 +1,10 @@
+@echo off
+echo ==============================================
+echo          GitHub 自动同步服务
+echo         每 20 秒自动拉取最新代码
+echo ==============================================
+
+:loop
+git pull
+timeout /t 20 /nobreak
+goto loop
